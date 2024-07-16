@@ -1,4 +1,4 @@
-* {
+body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,6 +17,24 @@ html {
     font-weight: 400;
 }
 
-main {
-    margin-inline: 1rem;
+.container{
+    max-width: 1376px;
+    height: 108px;
+    margin: 0 auto;
+}
+
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_menu{
+    display: flex;
+    gap: 0 200px;
+}
+li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
 }
