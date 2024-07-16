@@ -1,3 +1,22 @@
-body{
-    background-color: yellow;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-main: rgba(33, 37, 41, 1);
+    --clr-accent: rgba(221, 215, 192, 1);
+    --clr-red: rgba(225, 58, 58, 1);
+    --clr-yellow: rgba(249, 198, 123, 1);
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: clamp(1rem, 0.75rem + 1.5vw, 2rem);
+    font-weight: 400;
+}
+
+main {
+    margin-inline: 1rem;
 }
