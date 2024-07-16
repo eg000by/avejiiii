@@ -55,3 +55,48 @@ a{
 .num_header{
     margin: 0;
 }
+
+
+main {
+    margin-inline: 1rem;
+}
+
+.about-company h2 {
+    margin-block-end: 1.5rem;
+    max-width: 70%;
+}
+
+.content p {
+    margin-block-end: 1rem;
+}
+
+.content h3 {
+    margin-block-start: 1.5rem;
+}
+
+h2 + h2 {
+    display: none;
+}
+
+@media (min-width: 900px) {
+    .about-company {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .about-company h2 {
+        grid-column: 1 / 2;
+    }
+    
+    .about-company .content {
+        grid-column: 2 / 3;
+    }
+
+    h2 {
+        display: none;
+    }
+
+    h2 + h2 {
+        display: block;
+    }   
+}
