@@ -13,13 +13,17 @@ body{
 
 html {
     font-family: "Roboto", sans-serif;
-    font-size: clamp(1rem, 0.75rem + 1.5vw, 2rem);
+    font-size: 18px;
     font-weight: 400;
 }
 
+.logo  {
+    width: 70px;
+    height: 74px;
+}
+
 .container{
-    max-width: 1376px;
-    height: 108px;
+    max-width: 1376px; 
     margin: 0 auto;
 }
 
@@ -27,6 +31,8 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    padding: 10px;
 }
 .header_menu{
     display: flex;
@@ -34,7 +40,18 @@ html {
 }
 li {
     list-style: none;
+    margin-bottom: 8px;
 }
+
+.menu_ul{
+    margin: 0;
+    padding: 0;
+}
+
 a{
     text-decoration: none;
+}
+
+.num_header{
+    margin: 0;
 }
