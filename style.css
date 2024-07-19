@@ -36,7 +36,7 @@ header {
     align-self: flex-start;
 }
 
-nav {
+header nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -55,7 +55,7 @@ ul {
     list-style: none;
 }
 
-li {
+header li {
     margin-block-end: 2rem;
     text-align: center;
 }
@@ -278,6 +278,7 @@ h3 {
 
 .request {
     font-size: 16px;
+    margin-block-end: 3.5rem;
 }
 
 .request h2{
@@ -322,6 +323,33 @@ form {
 
 .request-widescreen {
     display: none;
+}
+
+/* Footer */
+
+footer {
+    font-size: 16px;
+}
+
+footer nav {
+    margin-block-end: 2rem;
+}
+
+footer nav ul {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.copyright {
+    text-align: center;
+    text-transform: uppercase;
 }
 
 @media (min-width:716px) {
@@ -379,7 +407,7 @@ form {
         grid-column: 2 / 3;
     }
 
-    nav {
+    header nav {
         transition: none;
     }
 
@@ -438,7 +466,7 @@ form {
 }
 
 @media (min-width: 1024px) {
-    nav {
+    header nav {
         position: static;
         background: none;
         height: auto;
@@ -447,7 +475,7 @@ form {
         margin-inline-start: 40%;
     }
 
-    li {
+    header li {
         margin: 0;
         text-align: left;
     }
